@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000">
+  <LinearLayout android:id="@+id/sHome" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="16dp" android:background="#000">
+    <TextView android:text="HYDRA" android:textColor="#FF3300" android:textSize="32sp" android:textStyle="bold" android:fontFamily="monospace" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/tvStatus" android:text="NOT CONNECTED" android:textColor="#888" android:textSize="11sp" android:fontFamily="monospace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="20dp"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+      <Button android:id="@+id/btnConnect" android:text="[CONNECT]" android:textColor="#00FF41" android:textSize="11sp" android:fontFamily="monospace" android:backgroundTint="#010A01" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginEnd="8dp"/>
+      <Button android:id="@+id/btnAttacks" android:text="[ATTACKS]" android:textColor="#00FF41" android:textSize="11sp" android:fontFamily="monospace" android:backgroundTint="#010A01" android:layout_width="wrap_content" android:layout_height="48dp"/>
+    </LinearLayout>
+  </LinearLayout>
+  <LinearLayout android:id="@+id/sMenu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" android:background="#000">
+    <Button android:id="@+id/btnBle" android:text="&gt; BLE SPAM" android:textColor="#aaa" android:fontFamily="monospace" android:backgroundTint="#030303" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="40dp" android:layout_marginBottom="8dp"/>
+    <Button android:id="@+id/btnBeacon" android:text="&gt; BEACON FLOOD" android:textColor="#aaa" android:fontFamily="monospace" android:backgroundTint="#030303" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginBottom="8dp"/>
+    <Button android:id="@+id/btnBoth" android:text="&gt; BOTH [MAX]" android:textColor="#FF3300" android:fontFamily="monospace" android:backgroundTint="#070100" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginBottom="16dp"/>
+    <Button android:id="@+id/btnMenuBack" android:text="BACK" android:textColor="#1A3D1A" android:fontFamily="monospace" android:backgroundTint="#0A0A0A" android:layout_width="match_parent" android:layout_height="44dp"/>
+  </LinearLayout>
+  <LinearLayout android:id="@+id/sConsent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp" android:background="#000">
+    <TextView android:text="!! PERMISSION REQUIRED" android:textColor="#FFCC00" android:textStyle="bold" android:fontFamily="monospace" android:gravity="center" android:background="#0A0800" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginBottom="16dp"/>
+    <TextView android:id="@+id/tvConsentAtk" android:text="BLE SPAM" android:textColor="#FF3300" android:textSize="18sp" android:textStyle="bold" android:fontFamily="monospace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+    <TextView android:text="Ask them first. Only run if they said yes." android:textColor="#3A6B3A" android:fontFamily="monospace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+      <Button android:id="@+id/btnYes" android:text="[CONFIRMED]" android:textColor="#00FF41" android:fontFamily="monospace" android:backgroundTint="#010A01" android:layout_width="0dp" android:layout_weight="1" android:layout_height="52dp" android:layout_marginEnd="8dp"/>
+      <Button android:id="@+id/btnNo" android:text="[ABORT]" android:textColor="#FF3300" android:fontFamily="monospace" android:backgroundTint="#0A0100" android:layout_width="0dp" android:layout_weight="1" android:layout_height="52dp"/>
+    </LinearLayout>
+  </LinearLayout>
+  <LinearLayout android:id="@+id/sAttack" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" android:background="#000">
+    <TextView android:id="@+id/tvAtkName" android:text="BLE SPAM" android:textColor="#FF3300" android:textSize="22sp" android:textStyle="bold" android:fontFamily="monospace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginBottom="4dp"/>
+    <TextView android:text="● LIVE" android:textColor="#00FF41" android:fontFamily="monospace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+    <TextView android:id="@+id/tvLog" android:text="> init...\n" android:textColor="#2A4D2A" android:fontFamily="monospace" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <Button android:id="@+id/btnStop" android:text="[STOP]" android:textColor="#FF3300" android:fontFamily="monospace" android:backgroundTint="#0A0100" android:layout_width="match_parent" android:layout_height="52dp"/>
+  </LinearLayout>
+</FrameLayout>
